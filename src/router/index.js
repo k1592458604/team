@@ -13,27 +13,42 @@ const routes = [
       //首页
       {
         path:'/home',
-        component:()=>import('@/views/home/Home.vue')
+        component:()=>import('@/views/home/Home.vue'),
+        meta:{
+          isShow:true
+        }
       },
       //课程
       {
         path:'/course',
-        component:()=>import('@/views/course/Course.vue')
+        component:()=>import('@/views/course/Course.vue'),
+        meta:{
+          isShow:true
+        }
       },
       //约课记录
       {
         path:'/record',
-        component:()=>import('@/views/record/Record.vue')
+        component:()=>import('@/views/record/Record.vue'),
+        meta:{
+          isShow:true
+        }
       },
       //练习
       {
         path:'/exercise',
-        component:()=>import('@/views/exercise/Exercise.vue')
+        component:()=>import('@/views/exercise/Exercise.vue'),
+        meta:{
+          isShow:true
+        }
       },
       //我的
       {
         path:'/user',
-        component:()=>import('@/views/user/User.vue')
+        component:()=>import('@/views/user/User.vue'),
+        meta:{
+          isShow:true
+        }
       }
     ]
   },
