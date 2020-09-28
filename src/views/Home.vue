@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-view v-if="!show"></router-view>
     <img src="/img/A0启动图.jpg" alt="" v-if="show" />
     <van-tabbar v-model="active" v-if="!show" route>
       <van-tabbar-item icon="home-o" to="/home" v-show="this.$route.meta.isShow">首页</van-tabbar-item>
@@ -27,7 +28,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
+*{
+  margin: 0;
+  padding: 0;
+}
 img {
   width: 100%;
 }
