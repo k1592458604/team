@@ -1,8 +1,6 @@
 <template>
   <div>
-      <h3>
-          用户
-      </h3>
+      <h3>练习</h3>
   </div>
 </template>
 

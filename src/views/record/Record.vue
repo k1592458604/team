@@ -1,7 +1,7 @@
 <template>
   <div>
       <h3>
-          用户
+          记录
       </h3>
   </div>
 </template>

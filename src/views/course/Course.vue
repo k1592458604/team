@@ -1,6 +1,6 @@
 <template>
   <div>
-      
+      <h3>课程</h3>
   </div>
 </template>
 
