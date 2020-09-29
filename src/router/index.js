@@ -8,6 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
+    redirect:'/home',
     component: Home,
     children:[
       //首页
