@@ -1,8 +1,8 @@
 <template>
     
   <div>
-    <!--     <router-view v-if="!show"></router-view>  -->
-    <!--     <img
+        <router-view v-if="!show"></router-view> 
+        <img
       src="/img/A0启动图.jpg"
       alt=""
       v-if="show"
@@ -23,7 +23,7 @@
       >
             <van-tabbar-item icon="user-o" to="/user">我的</van-tabbar-item>
           </van-tabbar
-    > -->
+    >
       
   </div>
 </template>
@@ -32,24 +32,24 @@
 export default {
   data() {
     return {
-      // show: true,
-      // active: "/home",
+      show: true,
+      active: "/home",
     };
   },
   mounted() {
-  //   setTimeout(() => {
-  //     this.show = false;
-  //   }, 2000);
+    setTimeout(() => {
+      this.show = false;
+    }, 2000);
   },
 };
 </script>
 
 <style >
-/* * {
-    margin: 0;
-    padding: 0;
+*{
+  margin: 0;
+  padding: 0;
 }
-img  {
-    width: 100%;
-} */
+img{
+  width: 100%;
+}
 </style>
