@@ -11,7 +11,7 @@
       <div class="head_btm">
         <van-dropdown-menu active-color="#EF8133">
              <van-dropdown-item title="分类" ref="classify" class="classify">
-               
+
              </van-dropdown-item>
               <van-dropdown-item title="排序" ref="sort" class="sort">
                <div>
