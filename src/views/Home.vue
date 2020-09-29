@@ -1,29 +1,18 @@
 <template>
     
   <div>
-        <router-view v-if="!show"></router-view>    
-     <img
+        <router-view v-if="!show"></router-view>      <img
       src="/img/A0启动图.jpg"
       alt=""
       v-if="show"
     />
-        <van-tabbar v-model="active" v-if="!show" route>
-            <van-tabbar-item
-        icon="home-o"
-        to="/home"
-        v-show="this.$route.meta.isShow"
-        >首页</van-tabbar-item
-      >
+        <van-tabbar v-model="active" v-if="!show" route v-show="this.$route.meta.isShow">
+            <van-tabbar-item v-onceicon="home-o" to="/home" >首页</van-tabbar-item>
             <van-tabbar-item icon="search" to="/course">课程</van-tabbar-item>
-            <van-tabbar-item icon="friends-o" to="/record"
-        >约课记录</van-tabbar-item
-      >
-            <van-tabbar-item icon="setting-o" to="/exercise"
-        >练习</van-tabbar-item
-      >
+            <van-tabbar-item icon="friends-o" to="/record">约课记录</van-tabbar-item>
+            <van-tabbar-item icon="setting-o" to="/exercise">练习</van-tabbar-item>
             <van-tabbar-item icon="user-o" to="/user">我的</van-tabbar-item>
-          </van-tabbar
-    >
+          </van-tabbar>
       
   </div>
 </template>

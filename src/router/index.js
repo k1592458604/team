@@ -44,27 +44,46 @@ const routes = [
       },
       {
         path:'/exercise1',
-        component:()=>import('@/views/exercise/Exercise1.vue'),
+        component:()=>import('@/views/exercise/Exercise1.vue'), 
+        meta:{
+          isShow:false
+        }
+
       },
       {
         path:'/exercise2',
         component:()=>import('@/views/exercise/Exercise2.vue'),
+        meta:{
+          isShow:false
+        }
       },
       {
         path:'/exercise3',
         component:()=>import('@/views/exercise/Exercise3.vue'),
+        meta:{
+          isShow:false
+        }
       },
       {
         path:'/exercise4',
         component:()=>import('@/views/exercise/Exercise4.vue'),
+        meta:{
+          isShow:false
+        }
       },
       {
         path:'/exercise5',
         component:()=>import('@/views/exercise/Exercise5.vue'),
+        meta:{
+          isShow:false
+        }
       },
       {
         path:'/exercise6',
         component:()=>import('@/views/exercise/Exercise6.vue'),
+        meta:{
+          isShow:false
+        }
       },
       //我的
       {
