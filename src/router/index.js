@@ -42,6 +42,30 @@ const routes = [
           isShow:true
         }
       },
+      {
+        path:'/exercise1',
+        component:()=>import('@/views/exercise/Exercise1.vue'),
+      },
+      {
+        path:'/exercise2',
+        component:()=>import('@/views/exercise/Exercise2.vue'),
+      },
+      {
+        path:'/exercise3',
+        component:()=>import('@/views/exercise/Exercise3.vue'),
+      },
+      {
+        path:'/exercise4',
+        component:()=>import('@/views/exercise/Exercise4.vue'),
+      },
+      {
+        path:'/exercise5',
+        component:()=>import('@/views/exercise/Exercise5.vue'),
+      },
+      {
+        path:'/exercise6',
+        component:()=>import('@/views/exercise/Exercise6.vue'),
+      },
       //我的
       {
         path:'/user',
@@ -52,30 +76,7 @@ const routes = [
       }
     ]
   },
-  {
-    path:'/exercise1',
-    component:()=>import('@/views/exercise/Exercise1.vue'),
-  },
-  {
-    path:'/exercise2',
-    component:()=>import('@/views/exercise/Exercise2.vue'),
-  },
-  {
-    path:'/exercise3',
-    component:()=>import('@/views/exercise/Exercise3.vue'),
-  },
-  {
-    path:'/exercise4',
-    component:()=>import('@/views/exercise/Exercise4.vue'),
-  },
-  {
-    path:'/exercise5',
-    component:()=>import('@/views/exercise/Exercise5.vue'),
-  },
-  {
-    path:'/exercise6',
-    component:()=>import('@/views/exercise/Exercise6.vue'),
-  },
+
  
 ]
 
