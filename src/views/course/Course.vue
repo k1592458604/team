@@ -54,8 +54,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-</style>>
 .color{
   color:#EF8133
 }
