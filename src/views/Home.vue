@@ -7,11 +7,11 @@
       alt=""
       v-if="show"
     />
-        <van-tabbar v-model="active" v-if="!show" route>
+        <van-tabbar v-model="active" v-if="!show" route   v-show="this.$route.meta.isShow">
             <van-tabbar-item
         icon="home-o"
         to="/home"
-
+       
         >首页</van-tabbar-item
       >       
        <!-- v-show="this.$route.meta.isShow" -->

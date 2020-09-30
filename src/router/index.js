@@ -10,6 +10,7 @@ const routes = [
     name: 'Home',
     redirect:'/home',
     component: Home,
+    redirect:'/home',
     children:[
       //首页
       {
@@ -25,6 +26,20 @@ const routes = [
         component:()=>import('@/views/course/Course.vue'),
         meta:{
           isShow:true
+        }
+      },
+      {
+        path:'/courseSearch',
+        component:()=>import('@/views/course/search/CourseSearch.vue'),
+        meta:{
+          isShow:false
+        }
+      },
+      {
+        path:'/courseList',
+        component:()=>import('@/views/course/list/CourseList.vue'),
+        meta:{
+          isShow:false
         }
       },
       //约课记录
@@ -90,6 +105,18 @@ const routes = [
       {
         path:'/userCourse',
         component: () => import('../views/user/Course.vue'),
+      },
+      {
+        path:'/userTeacher',
+        component: () => import('../views/user/Teacher.vue'),
+      },
+      {
+        path:'userenshrine',
+        component: () => import('../views/user/Enshrine.vue'),
+      },
+      {
+        path:'userperiod',
+        component: () => import('../views/user/Period.vue'),
       }
     ]
   },
