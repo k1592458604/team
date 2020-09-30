@@ -76,10 +76,45 @@ const routes = [
         path:'/record',
         component:()=>import('@/views/record/Record.vue'),
         meta:{
+<<<<<<< HEAD
+          isShow:true
+        },
+      },
+      {
+        path:'/recordCord',
+        component:()=>import('@/views/record/Cord/recordCord.vue'),
+        meta:{
+          isShow:false
+        },
+      },
+      {
+        path:'/recordSearch',
+        component:()=>import('@/views/record/Search/recordSearch.vue'),
+        meta:{
+          isShow:false
+        },
+      },
+      {
+        path:'/recordOto',
+        component:()=>import('@/views/record/Oto/recordOto.vue'),
+        meta:{
+          isShow:false
+        },
+      },
+      {
+        path:'/recordTeacher',
+        component:()=>import('@/views/record/Teacher/recordTeacher.vue'),
+        meta:{
+          isShow:false
+        },
+=======
           isShow:true,
           isstay:true
         }
+>>>>>>> fbd3639bff77ebe73b8bea40dd8f6884ac7c6ba0
       },
+     
+     
       //练习
       {
         path:'/exercise',

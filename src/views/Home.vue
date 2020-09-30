@@ -38,6 +38,11 @@ export default {
     };
   },
   mounted() {
+<<<<<<< HEAD
+    setTimeout(() => {
+      this.show = false;
+    }, 2000);
+=======
     // setTimeout(() => {
     //   this.$route.meta.isstay = true
     //   this.show = false;
@@ -72,6 +77,7 @@ export default {
       box.style.left = x-35+'px'
       box.style.top = y-35+'px'
     }
+>>>>>>> fbd3639bff77ebe73b8bea40dd8f6884ac7c6ba0
   }
 };
 </script>
