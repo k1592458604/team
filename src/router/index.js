@@ -9,6 +9,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    redirect:'/home',
     children:[
       //首页
       {
@@ -84,6 +85,22 @@ const routes = [
         meta:{
           isShow:false
         }
+      },
+      {
+        path:'/exercise7',
+        component:()=>import('@/views/exercise/Exercise7.vue'), 
+        meta:{
+          isShow:false
+        }
+
+      },
+      {
+        path:'/exercise8',
+        component:()=>import('@/views/exercise/Exercise8.vue'), 
+        meta:{
+          isShow:false
+        }
+
       },
       //我的
       {

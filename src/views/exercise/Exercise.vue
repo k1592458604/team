@@ -121,14 +121,12 @@ export default {
 }
 .exercise-fenl-item {
   width: 25%;
-  /* height: 0.85rem; */
-  /* margin: 0 auto; */
   text-align: center;
 
 }
 .exercise-footer {
   width: 100%;
-  height: 2.4rem;
+  height: 2.35rem;
   background: white;
 }
 .exercise-footer-div1 {
@@ -150,20 +148,14 @@ export default {
 .exercise-footer-div4 {
   color: gray;
 }
-/* .exercise-fenl-item div{
-  width: 50%;
-} */
+
 .exercise-fenl-item div img{
   width: 50%;
   margin: 0.06rem 0;
 }
-/* .exercise-footer-div5 { */
-/* float: left */
-/* margin: 0px;
- padding: 0px
-} */
+
 .van-empty {
   width: 100%;
-  height: 1.3rem;
+  height: 1.5rem;
 }
 </style>
