@@ -6,7 +6,7 @@
         left-arrow
         @click-left="onClickLeft"
       />
-    <div class="box">
+    <div class="ye-box">
       <div class="ye">
         <span>我的余额</span><span style="color: red">0 学习币</span>
       </div>

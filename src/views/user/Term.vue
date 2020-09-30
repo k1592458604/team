@@ -1,5 +1,5 @@
 <template>
-  <div class="big-box">
+  <div class="big-box1">
     <van-nav-bar
       title="修改个人信息"
       left-text="返回"
@@ -8,7 +8,7 @@
       @click-left="onClickLeft"
     />
     <!-- <div >17530520121</div> -->
-    <input type="text" class="box" placeholder="17530520121" />
+    <input type="text" class="box1" placeholder="17530520121" />
   </div>
 </template>
 
@@ -22,8 +22,13 @@ export default {
 };
 </script>
 
+<<<<<<< HEAD
+<style>
+.box1 {
+=======
 <style scoped>
 .box {
+>>>>>>> 1a2338fe8514b37f4297aba878c3c5006f7938d3
   width: 100%;
   height: 0.5rem;
   background: white;
@@ -34,7 +39,7 @@ export default {
   border: 0;
   /* align-items: center; */
 }
-.big-box {
+.big-box1 {
   background: rgb(240, 242, 245);
   height: 100vh;
 }

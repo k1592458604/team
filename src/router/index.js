@@ -80,6 +80,8 @@ const routes = [
           isstay:true
         }
       },
+     
+     
       //练习
       {
         path:'/exercise',
@@ -93,7 +95,6 @@ const routes = [
         path:'/exercise1',
         component:()=>import('@/views/exercise/Exercise1.vue'),
         meta:{
-          isstay:true,
           isstay:true
         }
       },
@@ -101,7 +102,6 @@ const routes = [
         path:'/exercise2',
         component:()=>import('@/views/exercise/Exercise2.vue'),
         meta:{
-          isstay:true,
           isstay:true
         }
       },
@@ -109,7 +109,6 @@ const routes = [
         path:'/exercise3',
         component:()=>import('@/views/exercise/Exercise3.vue'),
         meta:{
-          isstay:true,
           isstay:true
         }
       },
@@ -117,7 +116,6 @@ const routes = [
         path:'/exercise4',
         component:()=>import('@/views/exercise/Exercise4.vue'),
         meta:{
-          isstay:true,
           isstay:true
         }
       },
@@ -125,7 +123,6 @@ const routes = [
         path:'/exercise5',
         component:()=>import('@/views/exercise/Exercise5.vue'),
         meta:{
-          isstay:true,
           isstay:true
         }
       },
@@ -133,7 +130,20 @@ const routes = [
         path:'/exercise6',
         component:()=>import('@/views/exercise/Exercise6.vue'),
         meta:{
-          isstay:true,
+          isstay:true
+        }
+      },
+      {
+        path:'/exercise7',
+        component:()=>import('@/views/exercise/Exercise7.vue'),
+        meta:{
+          isstay:true
+        }
+      },
+      {
+        path:'/exercise8',
+        component:()=>import('@/views/exercise/Exercise8.vue'),
+        meta:{
           isstay:true
         }
       },
@@ -173,10 +183,13 @@ const routes = [
       {
         path:'userperiod',
         component: () => import('../views/user/Period.vue'),
+      },
+      {
+        path:'userstudy',
+        component: () => import('../views/user/Study.vue'),
       }
     ]
   },
-
  
 ]
 

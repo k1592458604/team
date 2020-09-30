@@ -14,31 +14,31 @@
       </div>
         <div class="exercise-fenl-item" @click="onclick2">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/2.png" alt="" />
         </div>
         <div>套卷练习</div>
       </div>
         <div class="exercise-fenl-item" @click="onclick3">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/3.png" alt="" />
         </div>
         <div>仿真模考</div>
       </div>
         <div class="exercise-fenl-item" @click="onclick4">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/4.png" alt="" />
         </div>
         <div>错题练习</div>
       </div>
         <div class="exercise-fenl-item" @click="onclick5">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/5.png" alt="" />
         </div>
         <div>测评记录</div>
       </div>
         <div class="exercise-fenl-item" @click="onclick6">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/6.png" alt="" />
         </div>
         <div>习题收藏</div>
       </div>
@@ -59,37 +59,37 @@
   </div>
 </template>
 
-<script>
+<script >
 export default {
   methods: {
      onclick1() {
       this.$router.push({
-        path:"/Exercise1"
+        path:"/exercise1"
       });
     },
      onclick2() {
       this.$router.push({
-        path:"/Exercise2"
+        path:"/exercise2"
       });
     },
      onclick3() {
       this.$router.push({
-        path:"/Exercise3"
+        path:"/exercise3"
       });
     },
      onclick4() {
       this.$router.push({
-        path:"/Exercise4"
+        path:"/exercise4"
       });
     },
      onclick5() {
       this.$router.push({
-        path:"/Exercise5"
+        path:"/exercise5"
       });
     },
      onclick6() {
       this.$router.push({
-        path:"/Exercise6"
+        path:"/exercise6"
       });
     },
   },
@@ -117,18 +117,17 @@ export default {
   justify-content: flex-start;
   background: white;
   flex-wrap: wrap;
+  border-radius: 0.12rem;
 
 }
 .exercise-fenl-item {
   width: 25%;
-  /* height: 0.85rem; */
-  /* margin: 0 auto; */
   text-align: center;
 
 }
 .exercise-footer {
   width: 100%;
-  height: 2.4rem;
+  height: 2.35rem;
   background: white;
 }
 .exercise-footer-div1 {
@@ -150,20 +149,14 @@ export default {
 .exercise-footer-div4 {
   color: gray;
 }
-/* .exercise-fenl-item div{
-  width: 50%;
-} */
+
 .exercise-fenl-item div img{
   width: 50%;
   margin: 0.06rem 0;
 }
-/* .exercise-footer-div5 { */
-/* float: left */
-/* margin: 0px;
- padding: 0px
-} */
+
 .van-empty {
   width: 100%;
-  height: 1.3rem;
+  height: 1.5rem;
 }
 </style>
