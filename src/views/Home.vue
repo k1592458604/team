@@ -1,18 +1,9 @@
 <template>
     
-<<<<<<< HEAD
-  <div>
-        <router-view v-if="!show"></router-view>      <img
-=======
   <div class="allBox">
-<<<<<<< HEAD
-        <router-view v-if="!show"></router-view>    
-     <img
->>>>>>> 684b5bd84dd1e19d3718d2e9239c9f2dcfbe2ca1
-=======
+
         <router-view ></router-view>    
     <!--  <img
->>>>>>> ec58ab34d885b239a43988e68263f85c654017f4
       src="/img/A0启动图.jpg"
       alt=""
       v-if="show"
@@ -30,16 +21,11 @@
             <van-tabbar-item icon="friends-o" to="/record">约课记录</van-tabbar-item>
             <van-tabbar-item icon="setting-o" to="/exercise">练习</van-tabbar-item>
             <van-tabbar-item icon="user-o" to="/user">我的</van-tabbar-item>
-<<<<<<< HEAD
-          </van-tabbar>
-      
-=======
           </van-tabbar
     >
       <div class="word" v-if="this.$route.meta.isstay" id="box" @touchmove='change' @click="stay">
         <van-icon size="35" color="white" name="chat-o" />
     </div>
->>>>>>> 684b5bd84dd1e19d3718d2e9239c9f2dcfbe2ca1
   </div>
 </template>
 

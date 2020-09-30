@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="harer"> 
     <div height=".44rem">
       <van-nav-bar title="题库选择" left-arrow @click-left="onClickLeft" />
     </div>
@@ -83,6 +83,11 @@ export default {
 </script>
 
 <style scoped>
+.harer{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 .exercise-footer-box {
   width: 100%;
   height: 4rem;

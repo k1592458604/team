@@ -1,17 +1,4 @@
 <template>
-<<<<<<< HEAD
-  
-</template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-=======
   <div>
     <div class="whole">
       <div class="min">
@@ -90,5 +77,4 @@ export default {
       height: 0.1rem;
     }
   }
->>>>>>> 684b5bd84dd1e19d3718d2e9239c9f2dcfbe2ca1
 </style>

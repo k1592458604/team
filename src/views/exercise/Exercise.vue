@@ -14,31 +14,31 @@
       </div>
         <div class="exercise-fenl-item" @click="onclick2">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/2.png" alt="" />
         </div>
         <div>套卷练习</div>
       </div>
         <div class="exercise-fenl-item" @click="onclick3">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/3.png" alt="" />
         </div>
         <div>仿真模考</div>
       </div>
         <div class="exercise-fenl-item" @click="onclick4">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/4.png" alt="" />
         </div>
         <div>错题练习</div>
       </div>
         <div class="exercise-fenl-item" @click="onclick5">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/5.png" alt="" />
         </div>
         <div>测评记录</div>
       </div>
         <div class="exercise-fenl-item" @click="onclick6">
         <div>
-          <img  src="../../../public/img/exercise/1.png" alt="" />
+          <img  src="../../../public/img/exercise/6.png" alt="" />
         </div>
         <div>习题收藏</div>
       </div>
@@ -64,32 +64,32 @@ export default {
   methods: {
      onclick1() {
       this.$router.push({
-        path:"/Exercise1"
+        path:"/exercise1"
       });
     },
      onclick2() {
       this.$router.push({
-        path:"/Exercise2"
+        path:"/exercise2"
       });
     },
      onclick3() {
       this.$router.push({
-        path:"/Exercise3"
+        path:"/exercise3"
       });
     },
      onclick4() {
       this.$router.push({
-        path:"/Exercise4"
+        path:"/exercise4"
       });
     },
      onclick5() {
       this.$router.push({
-        path:"/Exercise5"
+        path:"/exercise5"
       });
     },
      onclick6() {
       this.$router.push({
-        path:"/Exercise6"
+        path:"/exercise6"
       });
     },
   },
@@ -117,6 +117,7 @@ export default {
   justify-content: flex-start;
   background: white;
   flex-wrap: wrap;
+  border-radius: 0.12rem;
 
 }
 .exercise-fenl-item {
