@@ -43,6 +43,30 @@ const routes = [
           isShow:true
         }
       },
+      {
+        path:'/exercise1',
+        component:()=>import('@/views/exercise/Exercise1.vue'),
+      },
+      {
+        path:'/exercise2',
+        component:()=>import('@/views/exercise/Exercise2.vue'),
+      },
+      {
+        path:'/exercise3',
+        component:()=>import('@/views/exercise/Exercise3.vue'),
+      },
+      {
+        path:'/exercise4',
+        component:()=>import('@/views/exercise/Exercise4.vue'),
+      },
+      {
+        path:'/exercise5',
+        component:()=>import('@/views/exercise/Exercise5.vue'),
+      },
+      {
+        path:'/exercise6',
+        component:()=>import('@/views/exercise/Exercise6.vue'),
+      },
       //我的
       {
         path:'/user',
@@ -50,9 +74,26 @@ const routes = [
         meta:{
           isShow:true
         }
+      },
+      {
+        path:'/userpersonal',
+        component: () => import('../views/user/Personal.vue'),
+      },
+      {
+        path:'/userterm',
+        component: () => import('../views/user/Term.vue'),
+      },
+      {
+        path:'/usersex',
+        component: () => import('../views/user/Sex.vue'),
+      },
+      {
+        path:'/userCourse',
+        component: () => import('../views/user/Course.vue'),
       }
     ]
   },
+
  
 ]
 

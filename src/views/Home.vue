@@ -1,7 +1,8 @@
 <template>
     
   <div>
-        <router-view v-if="!show"></router-view>     <img
+        <router-view v-if="!show"></router-view>    
+     <img
       src="/img/A0启动图.jpg"
       alt=""
       v-if="show"
@@ -10,9 +11,10 @@
             <van-tabbar-item
         icon="home-o"
         to="/home"
-        v-show="this.$route.meta.isShow"
+
         >首页</van-tabbar-item
-      >
+      >       
+       <!-- v-show="this.$route.meta.isShow" -->
             <van-tabbar-item icon="search" to="/course">课程</van-tabbar-item>
             <van-tabbar-item icon="friends-o" to="/record"
         >约课记录</van-tabbar-item
@@ -43,12 +45,12 @@ export default {
 };
 </script>
 
-<style >
-*{
+<style >
+* {
   margin: 0;
   padding: 0;
 }
-img{
+img {
   width: 100%;
 }
 </style>
