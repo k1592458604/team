@@ -11,7 +11,7 @@
     </div>
     <!-- 卡片 -->
     <div class="card">
-      <van-image round width="3rem" class="img" height="3rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+      <van-image round  class="img1"  src="https://img.yzcdn.cn/vant/cat.jpeg" />
       <div class="name">毛昭燕</div>
       <div class="sex">女&nbsp;&nbsp;&nbsp;&nbsp;15年教龄</div>
       <div class="y">
@@ -39,7 +39,7 @@
             <div class="jj">
               <ul>
                 <li class="ls">老师简介</li>
-                <li class="fen">教学风格:尤其擅长阅读教学，能让学上快速掌握阅读技能
+                <li class="fen1">教学风格:尤其擅长阅读教学，能让学上快速掌握阅读技能
                   ，有效提高学习成绩。39岁，毕业于华中师范大学汉语言文学专业，有高中
                   语文教师资格证，从教12年以上，先后在湖北、深圳、上海等地公立，民办学校
                   及知名培训机构任教，学生多考入上海中学、南洋模范中学等重点学校.</li>
@@ -47,14 +47,14 @@
             </div>
           </van-tab>
           <van-tab title="主讲课程" class="zj">
+            <div class="zjbox">
             <div class="zj-1" @click="zhujiang">
               <div class="zj-2">每时每刻特级教师-自主招生冲刺讲座10-二次函数4-存在性问题</div>
               <div class="zj-3">共一课时</div>
               <ul class="zj-4">
                 <li class="zj-4-1"><van-image
                   round
-                  width="2rem"
-                  height="2rem"
+               class="img"
                   src="https://img.yzcdn.cn/vant/cat.jpeg"
                 /></li>
                 <li class="zj-4-2">毛昭燕</li>
@@ -71,8 +71,8 @@
                 <ul class="zj-4">
                   <li class="zj-4-1"><van-image
                     round
-                    width="2rem"
-                    height="2rem"
+                  
+                    class="img"
                     src="https://img.yzcdn.cn/vant/cat.jpeg"
                   /></li>
                   <li class="zj-4-2">毛昭燕</li>
@@ -89,8 +89,7 @@
                   <ul class="zj-4">
                     <li class="zj-4-1"><van-image
                       round
-                      width="2rem"
-                      height="2rem"
+                     class="img"
                       src="https://img.yzcdn.cn/vant/cat.jpeg"
                     /></li>
                     <li class="zj-4-2">毛昭燕</li>
@@ -107,8 +106,7 @@
                     <ul class="zj-4">
                       <li class="zj-4-1"><van-image
                         round
-                        width="2rem"
-                        height="2rem"
+                       class="img"
                         src="https://img.yzcdn.cn/vant/cat.jpeg"
                       /></li>
                       <li class="zj-4-2">毛昭燕</li>
@@ -125,8 +123,7 @@
                       <ul class="zj-4">
                         <li class="zj-4-1"><van-image
                           round
-                          width="2rem"
-                          height="2rem"
+                          class="img"
                           src="https://img.yzcdn.cn/vant/cat.jpeg"
                         /></li>
                         <li class="zj-4-2">毛昭燕</li>
@@ -136,6 +133,7 @@
                         <li class="zj-6-1">61人已报名</li>
                         <li class="zj-6-2">免费</li>
                       </ul>
+                    </div>
                     </div>
           </van-tab>
           <van-tab title="学员评价" class="pj"><img src="../../../../public/img/record/pl.jpg" alt="" class="pl"></van-tab>
@@ -182,18 +180,18 @@
         this.value2=false
       },
       zhujiang(){
-        this.$router.push({
-          path:''
-        })
+        // this.$router.push({
+        //   path:''
+        // })
       }
     }
   }
 </script>
 
 <style scoped lang="scss">
-  .aa {
+   .aa {
     width: 100%;
-    height: 100px;
+    height: 0.8rem;
     background: #5fabf8;
   }
 
@@ -201,71 +199,72 @@
     width: 100%;
     display: flex;
     color: white;
+    font-size: 0.2rem;
   }
 
   .c {
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 0.2rem;
+    margin-top: 0.1rem;
   }
 
   .k {
-    margin-left: 117px;
-    margin-top: 10px;
+    margin-left: 1.17rem;
+    margin-top: 0.1rem;
   }
-
   .card {
     width: 95%;
-    height: 80px;
+    height: 1rem;
     position: absolute;
-    top: 52px;
-    left: 10px;
+    top: 0.52rem;
+    left: 0.1rem;
     background: white;
     z-index: 222;
   }
-
-  .img {
-    margin-left: 35px;
-    margin-top: 15px;
+  .img1 {
+    margin-left: 0.35rem;
+    margin-top: 0.15rem;
+     height: 55%;
+    width: 15%
   }
 
   .name {
-    margin-left: 93px;
-    margin-top: -46px;
+    margin-left: 1.05rem;
+    margin-top: -0.8rem;
     color: #7f7f7f;
-    font-size: 16px;
+    font-size: 0.15rem;
   }
 
   .sex {
-    margin-left: 86px;
-    margin-top: 7px;
+    margin-left: 1.03rem;
+    margin-top: 0.07rem;
     color: #b7b7b7;
-    font-size: 15px;
+    font-size: 0.13rem;
   }
 
   .y {
-    width: 65px;
-    height: 30px;
-    margin-left: 270px;
-    margin-top: -39px;
+    width: 0.65rem;
+    height: 0.3rem;
+    margin-left: 2.7rem;
+    margin-top: -1.09rem;
   }
 
   .gz {
-    width: 60px;
-    height: 25px;
-    border-radius: 25px;
+    width: 0.6rem;
+    height: 0.4rem;
+    border-radius: 0.25rem;
     background: #EBEEFE;
     color: #EB7B2F;
-    border: 1px solid #EBEEFE;
-    font-size: 14px;
+    border: 0.1rem solid #EBEEFE;
+    font-size: 0.1rem;
   }
   .gz1 {
-    width: 60px;
-    height: 25px;
-    border-radius: 25px;
+    width: 0.6rem;
+    height: 0.25rem;
+    border-radius: 0.25rem;
     background: #EBEEFE;
     color: #BABABA;
-    border: 1px solid #EBEEFE;
-    font-size: 14px;
+    border: 0.01rem solid #EBEEFE;
+    font-size: 0.1rem;
   }
 
 
@@ -277,10 +276,10 @@
 
   .mine {
     width: 100%;
-    height: 10h;
+    height: 0.2rem;
     background: white;
     position: absolute;
-    top: 150px;
+    top: 1.5rem;
     color: #7D7E80;
 
   }
@@ -292,10 +291,10 @@
   }
 
   .nl {
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
     color: #8C8C8C;
-    font-size: 14px;
+    font-size: 0.1rem;
   }
 
   .nl ul {
@@ -303,10 +302,10 @@
   }
 
   .jg {
-    margin-left: 20px;
-    margin-top: 30px;
+    margin-left: 0.2rem;
+    margin-top: 0.3rem;
     color: #8C8C8C;
-    font-size: 14px;
+    font-size: 0.1rem;
   }
 
   .jg ul {
@@ -314,14 +313,14 @@
   }
 
   .fen {
-    margin-left: 25px;
+    margin-left: 0.25rem;
   }
 
   .jj {
-    margin-left: 20px;
-    margin-top: 30px;
+    margin-left: 0.2rem;
+    margin-top: 0.3rem;
     color: #8C8C8C;
-    font-size: 14px;
+    font-size: 0.1rem;
   }
 
   .jj ul {
@@ -329,11 +328,11 @@
   }
 
   .jj ul li {
-    margin-top: 5px;
+    margin-top: 0.05rem;
   }
 
   .ls {
-    width: 380px;
+    width: 3.8rem;
   }
 
   .pj {
@@ -342,78 +341,88 @@
   }
 
   .img {
-    width: 100%;
-    height: 40vh;
+    width: 0.4rem;
+    height: 0.4rem;
   }
 
   .zj {
     width: 100%;
-    height: 80vh;
+    height: 64vh;
     background: white;
+  overflow: scroll;
   }
-
+  // .zjbox{
+  //   width: 100%;
+  //   height: 64vh;
+  //   overflow: scroll
+  // }
+ 
   .zj-1 {
     width: 95%;
     height: 190px;
-    border: 1px solid #F0F2F5;
-    margin-left: 10px;
-    margin-top: 30px;
+    border: 0.01rem solid #F0F2F5;
+    margin-left: 0.1rem;
+    margin-top: 0.3rem;
   }
 
   .zj-2 {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-left: 20px;
+    font-size: 0.16rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
     color: #323233
   }
   .zj-3{
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 0.1rem;
+    margin-left: 0.2rem;
     color: #323233;
-    font-size: 14px;
+    font-size: 0.14rem;
   }
   .zj-4{
     display: flex;
    
   }
   .zj-4-1{
-    margin-left: 20px;
-    margin-top:12px;
+    margin-left: 0.2rem;
+    margin-top:-0.0.9rem;
   }
   .zj-4-2{
-    margin-left: 7px;
-    margin-top:19px;
-    font-size: 14px;
+    margin-left: 0.27rem;
+    margin-top:0.59rem;
+    font-size: 0.14rem;
     color: #7D7E80
   }
   .zj-5{
     width: 92%;
-    height: 1px;
+    height: 0.01rem;
     background: #F0F2F5;
-    margin-left: 10px;
-    margin-top: 5px;
+    margin-left: 0.1rem;
+    margin-top: 0.05rem;
   }
   .zj-6{
     display: flex;
   }
   .zj-6-1{
-    font-size: 14px;
-    margin-left: 30px;
-    margin-top:13px;
+    font-size: 0.14rem;
+    margin-left: 0.3rem;
+    margin-top:0.13rem;
   }
   .zj-6-2{
-    margin-left: 183px;
-    font-size: 16px;
-    margin-top:13px;
+    margin-left: 1.83rem;
+    font-size: 0.16rem;
+    margin-top:-0.65rem;
     color: #78BD62;
   }
   .btn {
     width: 100%;
-    height: 45px;
+    height: 0.45rem;
     background: #EB6100;
-    border: 1px solid #EB6100;
+    border: 0.01rem solid #EB6100;
     color: white;
     position: fixed;
-    top:621px;
+    font-size: 0.2rem;
+        top:6.21rem;
+  }
+  .fen1{
+    margin-left: -0.3rem
   }
 </style>

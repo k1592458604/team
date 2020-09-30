@@ -57,15 +57,17 @@
     </van-dropdown-menu>
     <div class="x1"></div>
     <!-- 卡片 -->
-    <div class="Card">
-      <div class="card" @click="xq" v-for="(item,index) in list">
-        <van-image round width="3rem" class="img" height="3rem" src="https://img.yzcdn.cn/vant/cat.jpeg" />
-        <div class="name">
-          {{item}}
-        </div>
-        <div class="sex">女&nbsp;&nbsp;&nbsp;&nbsp;15年教龄</div>
-        <div class="y"><input type="button" value="预约" class="yy"></div>
-      </div>
+    <div class="cardBox">
+        <div class="card" @click="xq" v-for="(item,index) in list">
+            <van-image round class="img" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+            <div class="name">
+              {{item}}
+            </div>
+            <div class="sex">女&nbsp;&nbsp;&nbsp;&nbsp;15年教龄</div>
+            <div class="y"><input type="button" value="预约" class="yy"></div>
+          </div>
+    </div>
+      
 
     </div>
   </div>
@@ -132,6 +134,11 @@
 </script>
 
 <style scoped lang="scss">
+  .cardBox{
+    width: 100%;
+    height: 84vh;
+    overflow: scroll
+  }
   .x {
     width: 100%;
     height: 3px;
@@ -158,52 +165,54 @@
 
   .card {
     width: 95%;
-    height: 80px;
-    margin-left: 10px;
-    margin-top: 15px;
+    height: 1rem;
+    margin-left: 0.1rem;
+    margin-top: 0.15rem;
     background: white;
   }
 
   .img {
-    margin-left: 35px;
-    margin-top: 15px;
+    margin-left: 0.35rem;
+    margin-top: 0.15rem;
+    height: 60%;
+    width: 15%
   }
 
   .name {
-    margin-left: 93px;
-    margin-top: -46px;
+    margin-left: 1.03rem;
+    margin-top: -0.81rem;
     color: #7f7f7f;
-    font-size: 16px;
+    font-size: 0.16rem;
   }
 
   .sex {
-    margin-left: 86px;
-    margin-top: 7px;
+    margin-left: 1.03rem;
+    margin-top: 0.07rem;
     color: #B7B7B7;
-    font-size: 15px;
+    font-size: 0.15rem;
   }
 
   .y {
-    width: 65px;
-    height: 30px;
-    margin-left: 270px;
-    margin-top: -39px;
+    width: 0.65rem;
+    height: 0.3rem;
+    margin-left: 2.7rem;
+    margin-top: -1.11rem;
   }
 
   .yy {
-    width: 70px;
-    height: 30px;
-    border-radius: 25px;
+    width: 0.7rem;
+    height: 0.3rem;
+    border-radius: 0.25rem;
     background: #EBEEFE;
     color: #EB6100;
-    border: 1px solid #EBEEFE;
-    font-size: 14px;
+    border: 0.01rem solid #EBEEFE;
+    font-size: 0.14rem;
   }
 
   .ls-1 {
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 14px;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+    font-size: 0.14rem;
   }
 
   .lss {
@@ -213,15 +222,15 @@
   }
 
   .ls-2 {
-    width: 70px;
-    height: 30px;
+    width: 0.7rem;
+    height: 0.3rem;
     background: #F5F5F5;
-    margin-left: 19px;
-    margin-top: 15px;
+    margin-left: 0.19rem;
+    margin-top: 0.15rem;
     color: #7f7f7f;
     text-align: center;
-    line-height: 35px;
-    font-size: 14px;
+    line-height: 0.3rem;
+    font-size: 0.14rem;
   }
   .active {
     color: #FC5B09;
@@ -229,22 +238,24 @@
   }
  .cz{
    width: 50%;
-   height: 40px;
+   height: 0.4rem;
    position: fixed;
-   top:627px;
+   top:6.27rem;
    background: white;
    color: #EB6100;
-   border: 1px solid white;
+   border: .01rem solid white;
+   font-size: 0.2rem
  }
  .qd{
    width: 50%;
-   height: 40px;
+   height: 0.4rem;
    position: fixed;
-   top:627px;
+   top:6.27rem;
    background: #EB6100;
    color: white;
-  left: 186px;
-  border: 1px solid #EB6100;
+  left: 1.86rem;
+  border: 0.01rem solid #EB6100;
+  font-size: 0.2rem
  }
   
 </style>

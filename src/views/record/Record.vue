@@ -47,15 +47,15 @@
 <style scoped lang="scss">
   .top {
     width: 100%;
-    height: 60px;
+    height: 0.6rem;
     text-align: center;
-    line-height: 60px;
-    font-size: 20px;
+    line-height: 0.6rem;
+    font-size:0.2rem;
   }
 
   .x {
     width: 100%;
-    height: 3px;
+    height: 0.03rem;
     background: #F0F2F5
   }
 
@@ -78,26 +78,28 @@
   }
 
   .img {
-    width: 222px;
-    height: 150px;
-    margin-left: 85px;
-    margin-top: 75px;
+    width: 2.22rem;
+    height: 1.5rem;
+    margin-left: 0.85rem;
+    margin-top: 0.75rem;
   }
 
   .btn {
-    width: 83px;
-    height: 26px;
+    width: 0.83rem;
+    height: 0.26rem;
     background: #EB6100;
-    font-size: 14px;
-    border: 1px solid #EB6100;
+    font-size: 0.14rem;
+    border:0.01rem solid #EB6100;
     color: white;
-    margin-left: 140px;
-    margin-top: 30px;
+    margin-left: 1.46rem;
+    margin-top: 0.3rem;
+    position: absolute;
+    top:3rem;
   }
 
   .p {
     text-align: center;
     color: #B7B7B7;
-    font-size: 14px;
+    font-size: 0.14rem;
   }
 </style>
