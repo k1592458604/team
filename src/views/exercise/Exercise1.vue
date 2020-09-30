@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div height="44px">
+    <div height=".44rem">
       <van-nav-bar title="题库选择" left-arrow @click-left="onClickLeft" />
     </div>
-    <div height="34px">
+    <div height=".34rem">
       <van-search
         shape="round"
         v-model="value"
@@ -64,8 +64,6 @@ export default {
       window.history.back();
     },
     onclick(item, index) {
-      console.log(this.activeKey);
-      console.log(index);
       this.activeKey = index;
       this.hlist = [];
       this.list.forEach((ele) => {
@@ -89,7 +87,7 @@ export default {
   width: 100%;
   height: 4rem;
   display: flex;
-  border-top: 1px solid gainsboro;
+  border-top: .01rem solid gainsboro;
 }
 .exercise-footer {
   width: 25%;

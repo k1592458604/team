@@ -6,8 +6,13 @@
       alt=""
       v-if="show"
     />
-        <van-tabbar v-model="active" v-if="!show" route v-show="this.$route.meta.isShow">
-            <van-tabbar-item icon="home-o" to="/home" >首页</van-tabbar-item>
+        <van-tabbar v-model="active" v-if="!show" route   v-show="this.$route.meta.isShow">
+            <van-tabbar-item
+        icon="home-o"
+        to="/home"
+       
+        >首页</van-tabbar-item
+      >
             <van-tabbar-item icon="search" to="/course">课程</van-tabbar-item>
             <van-tabbar-item icon="friends-o" to="/record">约课记录</van-tabbar-item>
             <van-tabbar-item icon="setting-o" to="/exercise">练习</van-tabbar-item>

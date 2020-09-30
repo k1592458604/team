@@ -48,10 +48,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .custom-image .van-empty__image {
-  width: 150px;
-  height: 150px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .div1{
   width: 100%;

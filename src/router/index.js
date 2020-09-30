@@ -27,6 +27,20 @@ const routes = [
           isShow:true
         }
       },
+      {
+        path:'/courseSearch',
+        component:()=>import('@/views/course/search/CourseSearch.vue'),
+        meta:{
+          isShow:false
+        }
+      },
+      {
+        path:'/courseList',
+        component:()=>import('@/views/course/list/CourseList.vue'),
+        meta:{
+          isShow:false
+        }
+      },
       //约课记录
       {
         path:'/record',

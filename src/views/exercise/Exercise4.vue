@@ -15,13 +15,13 @@
   </van-col>
   <van-col span="8">
       <div class="gonggu">
-          <div class="img"><van-icon size="18px" name="failure" /></div>
+          <div class="img"><van-icon size="18" name="failure" /></div>
           <div class="ggct">巩固全部错题</div>
       </div>
   </van-col>
   <van-col span="8">
         <div class="fenl">
-          <div class="img"><van-icon size="18px" name="failure" /></div>
+          <div class="img"><van-icon size="18" name="failure" /></div>
           <div class="cuoti" ref="yichu" @click="onclick">移除错题</div>
       </div>
   </van-col>
@@ -74,7 +74,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .div1{
   width: 100%;
   height: 2.1rem;

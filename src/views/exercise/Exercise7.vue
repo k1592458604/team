@@ -12,11 +12,11 @@
     <div class="tiku">
       <van-row>
         <van-col class="col" span="2"
-          ><van-icon size="22px" name="column"
+          ><van-icon size="22" name="column"
         /></van-col>
         <van-col class="wenz" span="20" @click="onclick">题库选择</van-col>
         <van-col class="col" span="2"
-          ><van-icon size="22px" name="setting-o"
+          ><van-icon size="22" name="setting-o"
         /></van-col>
       </van-row>
       <div class="box-div">
@@ -88,7 +88,7 @@ export default {
     margin: 0.08rem;
     height: 0.55rem;
     
-    border:1px solid gray;
+    border:.01rem solid gray;
 }
 .button{
     width: 0.18rem;
