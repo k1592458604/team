@@ -9,6 +9,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    redirect:'/home',
     children:[
       //首页
       {
@@ -24,6 +25,20 @@ const routes = [
         component:()=>import('@/views/course/Course.vue'),
         meta:{
           isShow:true
+        }
+      },
+      {
+        path:'/courseSearch',
+        component:()=>import('@/views/course/search/CourseSearch.vue'),
+        meta:{
+          isShow:false
+        }
+      },
+      {
+        path:'/courseList',
+        component:()=>import('@/views/course/list/CourseList.vue'),
+        meta:{
+          isShow:false
         }
       },
       //约课记录
