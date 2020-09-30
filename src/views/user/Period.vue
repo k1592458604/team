@@ -6,7 +6,7 @@
         left-arrow
         @click-left="onClickLeft"
       />
-    <div class="box">
+    <div class="ye-box">
       <div class="ye">
         <span>我的余额</span><span style="color: red">0 学习币</span>
       </div>
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style>
-.box {
+.ye-box {
   height: 100%;
   background: rgb(238, 238, 238);
 }

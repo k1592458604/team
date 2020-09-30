@@ -166,6 +166,10 @@ const routes = [
       {
         path:'userperiod',
         component: () => import('../views/user/Period.vue'),
+      },
+      {
+        path:'userstudy',
+        component: () => import('../views/user/Study.vue'),
       }
     ]
   },
