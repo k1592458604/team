@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div class="cont">
     <div class="person">
       <div class="top-box">
         <div class="tab">
@@ -29,7 +30,7 @@
                 <p class="name">我的特色课</p>
                 <p class="note">易购特色课程的学习</p>
               </div>
-              <div class="mine-plan">
+              <div class="mine-plan" @click="gotoRecord">
                 <p class="count">0</p>
                 <p class="name">一对一辅导</p>
                 <p class="note">我的一对一老师辅导</p>
@@ -57,7 +58,8 @@
           </div>
         </div>
       </div>
-      <ul class="menu-box">
+      
+        <ul class="menu-box">
         <li>
           <p class="title">课程相关</p>
           <div class="item-box">
@@ -145,6 +147,7 @@
           </div>
         </li>
       </ul>
+      </div>
       
     </div>
   </div>
@@ -156,6 +159,11 @@ export default {
     return{}
   },
   methods: {
+    gotoRecord(){
+      this.$router.push({
+        path:'/record'
+      })
+    },
      Personal(){
        this.$router.push({
          path:'/userpersonal'
@@ -181,6 +189,13 @@ export default {
 </script>
 
 <style scoped>
+.cont{
+  width: 100%;
+  height: 100vh;
+
+  overflow: scroll;
+
+}
 .person {
   width: 100%;
   height: 100vh;
