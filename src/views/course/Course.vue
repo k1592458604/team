@@ -158,6 +158,7 @@ export default {
       }
       .teacher{
         height: .65rem;
+        margin: 0 !important;
         display: flex;
         align-items: center;
         img{
@@ -173,7 +174,7 @@ export default {
         }
       }
       .sales{
-        height: .44rem;
+        height: .24rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
