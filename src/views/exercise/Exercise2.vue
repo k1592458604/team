@@ -49,12 +49,8 @@ export default {
 </script>
 
 <style scoped>
-.custom-image .van-empty__image {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.div1{
-  width: 100%;
-  height: 2.1rem;
-}
+  .custom-image .van-empty__image {
+    width: 1.5rem;
+    height:  1.5rem;
+  }
 </style>

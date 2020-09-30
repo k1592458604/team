@@ -5,15 +5,20 @@
         <router-view v-if="!show"></router-view>      <img
 =======
   <div class="allBox">
+<<<<<<< HEAD
         <router-view v-if="!show"></router-view>    
      <img
 >>>>>>> 684b5bd84dd1e19d3718d2e9239c9f2dcfbe2ca1
+=======
+        <router-view ></router-view>    
+    <!--  <img
+>>>>>>> ec58ab34d885b239a43988e68263f85c654017f4
       src="/img/A0启动图.jpg"
       alt=""
       v-if="show"
 
-    />
-        <van-tabbar v-model="active" v-if="!show" route   v-show="this.$route.meta.isShow">
+    /> -->
+        <van-tabbar v-model="active"  route   v-show="this.$route.meta.isShow">
             <van-tabbar-item
         icon="home-o"
         to="/home"
@@ -42,15 +47,15 @@
 export default {
   data() {
     return {
-      show: true,
+      // show: true,
       active: "/home",
     };
   },
   mounted() {
-    setTimeout(() => {
-      this.$route.meta.isstay = true
-      this.show = false;
-    }, 2000);
+    // setTimeout(() => {
+    //   this.$route.meta.isstay = true
+    //   this.show = false;
+    // }, 2000);
   },
   methods:{
     stay(){

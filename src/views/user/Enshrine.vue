@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   .custom-image .van-empty__image {
     width: 90px;
     height: 90px;

@@ -18,7 +18,7 @@ const routes = [
         component:()=>import('@/views/home/Home.vue'),
         meta:{
           isShow:true,
-          isstay:false
+          isstay:true
         }
       },
       // 学习日历
@@ -62,6 +62,13 @@ const routes = [
         meta:{
           isShow:false,
           isstay:true
+        }
+      },
+      {
+        path:'/courseDetail',
+        component:()=>import('@/views/course/detail/CourseDetail.vue'),
+        meta:{
+          isShow:false
         }
       },
       //约课记录

@@ -54,7 +54,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 ul{
     background: #fff;
     margin: .26667rem 0;

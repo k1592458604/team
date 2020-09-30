@@ -180,7 +180,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .person {
   width: 100%;
   height: 100vh;
