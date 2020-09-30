@@ -9,7 +9,7 @@
           <p>李老师16号到22号地理大课堂开课啦</p>
         </template>
         <template #right>
-          <van-icon name="calendar-o" size="20" />
+          <van-icon name="calendar-o" size="20"  @click="gotoDate"/>
         </template>
       </van-nav-bar>
     </header>
@@ -80,6 +80,11 @@ export default {
     };
   },
   methods: {
+    gotoDate(){
+      this.$router.push({
+        path:'/home-calendar'
+      })
+    },
       del(){
             this.$toast('移除成功');
       },
