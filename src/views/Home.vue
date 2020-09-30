@@ -6,8 +6,9 @@
       src="/img/A0启动图.jpg"
       alt=""
       v-if="show"
+
     />
-        <van-tabbar v-model="active" v-if="!show" route  v-show="this.$route.meta.isShow">
+        <van-tabbar v-model="active" v-if="!show" route   v-show="this.$route.meta.isShow">
             <van-tabbar-item
         icon="home-o"
         to="/home"
@@ -40,6 +41,7 @@ export default {
   },
   mounted() {
     setTimeout(() => {
+      this.$route.meta.isstay = true
       this.show = false;
     }, 2000);
   },
@@ -81,7 +83,6 @@ export default {
   margin: 0;
   padding: 0;
 }
-
 .word{
   width: 0.7rem;
   height: 0.7rem;

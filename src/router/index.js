@@ -9,7 +9,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    redirect:"/home",
+    redirect:'/home',
     children:[
       //首页
       {
@@ -17,7 +17,7 @@ const routes = [
         component:()=>import('@/views/home/Home.vue'),
         meta:{
           isShow:true,
-          isstay:true
+          isstay:false
         }
       },
       // 学习日历
@@ -47,6 +47,22 @@ const routes = [
           isstay:true
         }
       },
+      {
+        path:'/courseSearch',
+        component:()=>import('@/views/course/search/CourseSearch.vue'),
+        meta:{
+          isShow:false,
+          isstay:true
+        }
+      },
+      {
+        path:'/courseList',
+        component:()=>import('@/views/course/list/CourseList.vue'),
+        meta:{
+          isShow:false,
+          isstay:true
+        }
+      },
       //约课记录
       {
         path:'/record',
@@ -69,6 +85,7 @@ const routes = [
         path:'/exercise1',
         component:()=>import('@/views/exercise/Exercise1.vue'),
         meta:{
+          isstay:true,
           isstay:true
         }
       },
@@ -76,6 +93,7 @@ const routes = [
         path:'/exercise2',
         component:()=>import('@/views/exercise/Exercise2.vue'),
         meta:{
+          isstay:true,
           isstay:true
         }
       },
@@ -83,6 +101,7 @@ const routes = [
         path:'/exercise3',
         component:()=>import('@/views/exercise/Exercise3.vue'),
         meta:{
+          isstay:true,
           isstay:true
         }
       },
@@ -90,6 +109,7 @@ const routes = [
         path:'/exercise4',
         component:()=>import('@/views/exercise/Exercise4.vue'),
         meta:{
+          isstay:true,
           isstay:true
         }
       },
@@ -97,6 +117,7 @@ const routes = [
         path:'/exercise5',
         component:()=>import('@/views/exercise/Exercise5.vue'),
         meta:{
+          isstay:true,
           isstay:true
         }
       },
@@ -104,6 +125,7 @@ const routes = [
         path:'/exercise6',
         component:()=>import('@/views/exercise/Exercise6.vue'),
         meta:{
+          isstay:true,
           isstay:true
         }
       },
