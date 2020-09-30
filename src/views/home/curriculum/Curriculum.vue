@@ -1,6 +1,6 @@
 <template>
   <div class="curriculum">
-      <div class="curriculum-n" v-for="(item,index) in list" :key="index">
+      <div class="curriculum-n" v-for="(item,index) in list" :key="index" @click="goto">
           <p class="curriculum-text">{{item.text}}</p>
           <p class="curriculum-con">{{item.con}}</p>
           <div class="curriculum-t">
@@ -12,7 +12,7 @@
               <span style="float: right;color: #44a426;">{{item.cz}}</span>
           </p>
       </div>
-      <div class="curriculum-n" v-for="item in list1" :key="item.text">
+      <div class="curriculum-n" v-for="item in list1" :key="item.text" @click="goto">
           <p class="curriculum-text">{{item.text}}</p>
           <p class="curriculum-con">{{item.con}}</p>
           <div class="curriculum-t">
@@ -93,6 +93,13 @@ export default {
           
                     cz:'$ 1.00'
                 }]
+        }
+    },
+    methods: {
+        goto(){
+            this.$router.push({
+                path:'/courseList'
+            })
         }
     },
 }

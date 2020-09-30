@@ -1,6 +1,7 @@
 <template>
     
   <div class="allBox">
+<<<<<<< HEAD
        <router-view v-if="!show"></router-view>  
 
         <img
@@ -16,13 +17,27 @@
     >
             <van-tabbar-item icon="home-o" to="/home">首页</van-tabbar-item>
       <!-- v-show="this.$route.meta.isShow" -->
+=======
+
+        <router-view ></router-view>    
+    <!--  <img
+      src="/img/A0启动图.jpg"
+      alt=""
+      v-if="show"
+
+    /> -->
+        <van-tabbar v-model="active"  route   v-show="this.$route.meta.isShow">
+            <van-tabbar-item
+        icon="home-o"
+        to="/home"
+       
+        >首页</van-tabbar-item
+      >       
+       <!-- v-show="this.$route.meta.isShow" -->
+>>>>>>> 1a2338fe8514b37f4297aba878c3c5006f7938d3
             <van-tabbar-item icon="search" to="/course">课程</van-tabbar-item>
-            <van-tabbar-item icon="friends-o" to="/record"
-        >约课记录</van-tabbar-item
-      >
-            <van-tabbar-item icon="setting-o" to="/exercise"
-        >练习</van-tabbar-item
-      >
+            <van-tabbar-item icon="friends-o" to="/record">约课记录</van-tabbar-item>
+            <van-tabbar-item icon="setting-o" to="/exercise">练习</van-tabbar-item>
             <van-tabbar-item icon="user-o" to="/user">我的</van-tabbar-item>
           </van-tabbar
     >
@@ -43,15 +58,24 @@
 export default {
   data() {
     return {
-      show: true,
+      // show: true,
       active: "/home",
     };
   },
   mounted() {
+<<<<<<< HEAD
     setTimeout(() => {
+<<<<<<< HEAD
       this.$route.meta.isstay = true;
+=======
+>>>>>>> 1a2338fe8514b37f4297aba878c3c5006f7938d3
       this.show = false;
     }, 2000);
+=======
+    // setTimeout(() => {
+    //   this.$route.meta.isstay = true
+    //   this.show = false;
+    // }, 2000);
   },
   methods: {
     stay() {
@@ -79,10 +103,18 @@ export default {
       }
       // console.log(y)
       // console.log(x)
+<<<<<<< HEAD
       box.style.left = x - 35 + "px";
       box.style.top = y - 35 + "px";
     },
   },
+=======
+      box.style.left = x-35+'px'
+      box.style.top = y-35+'px'
+    }
+>>>>>>> fbd3639bff77ebe73b8bea40dd8f6884ac7c6ba0
+  }
+>>>>>>> 1a2338fe8514b37f4297aba878c3c5006f7938d3
 };
 </script>
 

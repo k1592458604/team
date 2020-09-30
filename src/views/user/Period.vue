@@ -24,8 +24,8 @@ export default {
 };
 </script>
 
-<style>
-.ye-box {
+<style scoped>
+.box {
   height: 100%;
   background: rgb(238, 238, 238);
 }

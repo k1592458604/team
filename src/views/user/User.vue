@@ -1,5 +1,10 @@
 <template>
+<<<<<<< HEAD
   
+=======
+  <div>
+    <div class="cont">
+>>>>>>> 1a2338fe8514b37f4297aba878c3c5006f7938d3
     <div class="person">
       <div class="top-box">
         <div class="tab">
@@ -29,7 +34,7 @@
                 <p class="name">我的特色课</p>
                 <p class="note">易购特色课程的学习</p>
               </div>
-              <div class="mine-plan">
+              <div class="mine-plan" @click="gotoRecord">
                 <p class="count">0</p>
                 <p class="name">一对一辅导</p>
                 <p class="note">我的一对一老师辅导</p>
@@ -57,7 +62,8 @@
           </div>
         </div>
       </div>
-      <ul class="menu-box">
+      
+        <ul class="menu-box">
         <li>
           <p class="title">课程相关</p>
           <div class="item-box">
@@ -168,6 +174,7 @@
           </div>
         </li>
       </ul>
+<<<<<<< HEAD
       <!-- <van-cell is-link class="tanchu">展示弹出层</van-cell> -->
       <van-popup v-model="show" :style="{ width: '96%' }">
         <div class="ban">
@@ -176,6 +183,10 @@
           />
         </div>
       </van-popup>
+=======
+      </div>
+      
+>>>>>>> 1a2338fe8514b37f4297aba878c3c5006f7938d3
     </div>
   
 </template>
@@ -188,6 +199,7 @@ export default {
     };
   },
   methods: {
+<<<<<<< HEAD
     SetUp(){
       this.$router.push({
         path:'/setup'
@@ -222,11 +234,45 @@ export default {
       });
     },
     banner() {},
+=======
+    gotoRecord(){
+      this.$router.push({
+        path:'/record'
+      })
+    },
+     Personal(){
+       this.$router.push({
+         path:'/userpersonal'
+       })
+     },
+     teacher(){
+       this.$router.push({
+         path:'/userteacher'
+       })
+     },
+     enshrine(){
+       this.$router.push({
+         path:'/userenshrine'
+       })
+     },
+     period(){
+       this.$router.push({
+         path:'/userperiod'
+       })
+     }
+>>>>>>> 1a2338fe8514b37f4297aba878c3c5006f7938d3
   },
 };
 </script>
 
-<style>
+<style scoped>
+.cont{
+  width: 100%;
+  height: 100vh;
+
+  overflow: scroll;
+
+}
 .person {
   width: 100%;
   height: 90vh;
