@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="teacher" v-for="(item,index) in list" :key="index">
+      <div class="teacher" v-for="(item,index) in list" :key="index" @click="goto">
           <div class="teacher-img">
               <img :src="item.img" alt="">
           </div>
@@ -33,6 +33,13 @@ export default {
                     introduce:'马学斌老师，从2004年起，专注中考数学压轴题1...'
                 }
             ]
+        }
+    },
+    methods: {
+        goto(){
+            this.$router.push({
+                path:'/recordTeacher'
+            })
         }
     },
 }

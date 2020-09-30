@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="teacher" v-for="(item,index) in list" :key="index">
+        <div class="teacher" v-for="(item,index) in list" :key="index" @click="goto">
             <div class="teacher-img">
                 <img :src="item.img" alt="">
             </div>
@@ -60,6 +60,13 @@
                     }
                 ]
             }
+        },
+        methods: {
+              goto(){
+            this.$router.push({
+                path:'/recordTeacher'
+            })
+        }
         },
     }
 </script>

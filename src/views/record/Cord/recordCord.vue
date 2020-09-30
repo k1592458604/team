@@ -58,7 +58,7 @@
     <div class="x1"></div>
     <!-- 卡片 -->
     <div class="cardBox">
-        <div class="card" @click="xq" v-for="(item,index) in list">
+        <div class="card" @click="xq" v-for="(item,index) in list" :key="index">
             <van-image round class="img" src="https://img.yzcdn.cn/vant/cat.jpeg" />
             <div class="name">
               {{item}}
@@ -69,7 +69,7 @@
     </div>
       
 
-    </div>
+   
   </div>
 </template>
 
@@ -137,7 +137,8 @@
   .cardBox{
     width: 100%;
     height: 84vh;
-    overflow: scroll
+    overflow: scroll;
+    background: #F0F2F5;
   }
   .x {
     width: 100%;

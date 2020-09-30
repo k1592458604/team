@@ -180,9 +180,9 @@
         this.value2=false
       },
       zhujiang(){
-        // this.$router.push({
-        //   path:''
-        // })
+        this.$router.push({
+          path:'/courseList'
+        })
       }
     }
   }

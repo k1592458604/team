@@ -32,6 +32,11 @@
                         path:"/course"
                     })
                 }
+                  if(index==1){
+                    this.$router.push({
+                        path:"/recordCord"
+                    })
+                }
                 if(index==2){
                     this.$router.push({
                         path:'/home-calendar'

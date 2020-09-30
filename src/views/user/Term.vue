@@ -22,13 +22,8 @@ export default {
 };
 </script>
 
-<<<<<<< HEAD
-<style>
-.box1 {
-=======
 <style scoped>
 .box {
->>>>>>> 1a2338fe8514b37f4297aba878c3c5006f7938d3
   width: 100%;
   height: 0.5rem;
   background: white;
