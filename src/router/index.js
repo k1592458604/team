@@ -41,6 +41,13 @@ const routes = [
           isShow:false
         }
       },
+      {
+        path:'/courseDetail',
+        component:()=>import('@/views/course/detail/CourseDetail.vue'),
+        meta:{
+          isShow:false
+        }
+      },
       //约课记录
       {
         path:'/record',
