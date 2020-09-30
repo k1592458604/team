@@ -1,55 +1,80 @@
 <template>
-    
   <div>
-    <!--     <router-view v-if="!show"></router-view>  -->
-    <!--     <img
-      src="/img/A0启动图.jpg"
-      alt=""
-      v-if="show"
-    />
-        <van-tabbar v-model="active" v-if="!show" route>
-            <van-tabbar-item
-        icon="home-o"
-        to="/home"
-        v-show="this.$route.meta.isShow"
-        >首页</van-tabbar-item
-      >
-            <van-tabbar-item icon="search" to="/course">课程</van-tabbar-item>
-            <van-tabbar-item icon="friends-o" to="/record"
-        >约课记录</van-tabbar-item
-      >
-            <van-tabbar-item icon="setting-o" to="/exercise"
-        >练习</van-tabbar-item
-      >
-            <van-tabbar-item icon="user-o" to="/user">我的</van-tabbar-item>
-          </van-tabbar
-    > -->
-      
+    <div class="whole">
+      <div class="min">
+        <!-- 轮播图 -->
+        <banner />
+        <!-- 导航 -->
+        <navigation class="tab" />
+        <!-- 名师阵容 -->
+        <div class="title">名师阵容</div>
+        <teacher />
+        <!-- 精品课程 -->
+        <div class="title">精品课程</div>
+        <curriculum class="curriculum" />
+        <!-- 推荐课程 -->
+        <div class="title">推荐课程</div>
+        <recommend/>
+        <!-- 明星讲师 -->
+        <div class="title">明星讲师</div>
+        <star/>
+        <div class="kong"></div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      // show: true,
-      // active: "/home",
-    };
-  },
-  mounted() {
-  //   setTimeout(() => {
-  //     this.show = false;
-  //   }, 2000);
-  },
-};
+  import banner from './banner/Banner'
+  import navigation from './navigation/Navigation'
+  import teacher from './teacher/Teacher'
+  import curriculum from './curriculum/Curriculum'
+  import recommend from './recommend/Recommend'
+  import star from './star/Star'
+  export default {
+    components: {
+      banner,
+      navigation,
+      teacher,
+      curriculum,
+      recommend,
+      star
+    }
+  }
 </script>
 
-<style >
-/* * {
-    margin: 0;
-    padding: 0;
-}
-img  {
-    width: 100%;
-} */
+<style lang='scss' scoped>
+  .whole {
+    width: 100%;
+    height: 93.5vh;
+    padding-bottom: 0.2rem;
+    overflow: scroll;
+
+    .min {
+      width: 100%;
+      background: rgb(240, 242, 245);
+    }
+
+    // position: relative;
+    .tab {
+      width: 100%;
+      position: relative;
+      top: -0.2rem;
+      left: 0rem;
+    }
+
+    .title {
+      width: 90%;
+      margin-top: 0.07rem;
+      margin-bottom: 0.07rem;
+      margin: 0 auto;
+      border-left: 0.03rem solid rgb(235, 97, 0);
+      font-size: 0.16rem;
+      padding-left: 0.07rem;
+      color: gray;
+    }
+    .kong{
+      height: 0.1rem;
+    }
+  }
 </style>
