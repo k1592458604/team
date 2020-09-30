@@ -1,14 +1,14 @@
 <template>
     
   <div class="allBox">
-        <router-view v-if="!show"></router-view>    
-     <img
+        <router-view ></router-view>    
+    <!--  <img
       src="/img/A0启动图.jpg"
       alt=""
       v-if="show"
 
-    />
-        <van-tabbar v-model="active" v-if="!show" route   v-show="this.$route.meta.isShow">
+    /> -->
+        <van-tabbar v-model="active"  route   v-show="this.$route.meta.isShow">
             <van-tabbar-item
         icon="home-o"
         to="/home"
@@ -36,15 +36,15 @@
 export default {
   data() {
     return {
-      show: true,
+      // show: true,
       active: "/home",
     };
   },
   mounted() {
-    setTimeout(() => {
-      this.$route.meta.isstay = true
-      this.show = false;
-    }, 2000);
+    // setTimeout(() => {
+    //   this.$route.meta.isstay = true
+    //   this.show = false;
+    // }, 2000);
   },
   methods:{
     stay(){

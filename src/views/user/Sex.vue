@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .big-box {
   background: rgb(240, 242, 245);
   height: 100vh;

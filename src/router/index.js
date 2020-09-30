@@ -18,7 +18,7 @@ const routes = [
         component:()=>import('@/views/home/Home.vue'),
         meta:{
           isShow:true,
-          isstay:false
+          isstay:true
         }
       },
       // 学习日历
