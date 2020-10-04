@@ -77,34 +77,39 @@ const routes = [
         component: () => import('@/views/record/Record.vue'),
         meta: {
           isShow: true,
+          isstay: true
         }
       },
       {
         path: '/recordCord',
         component: () => import('@/views/record/Cord/recordCord.vue'),
         meta: {
-          isShow: false
+          isShow: false,
+          isstay: true
         },
       },
       {
         path: '/recordSearch',
         component: () => import('@/views/course/search/CourseSearch.vue'),
         meta: {
-          isShow: false
+          isShow: false,
+          isstay: true
         },
       },
       {
         path: '/recordOto',
         component: () => import('@/views/record/Oto/recordOto.vue'),
         meta: {
-          isShow: false
+          isShow: false,
+          isstay: true
         },
       },
       {
         path: '/recordTeacher',
         component: () => import('@/views/record/Teacher/recordTeacher.vue'),
         meta: {
-          isShow: false
+          isShow: false,
+          isstay: true
         },
       },
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style=" background: #F0F2F5;">
     <!-- 头部导航 -->
     <van-nav-bar title="一对一辅导" left-arrow>
       <template #left>
@@ -12,8 +12,8 @@
     <div class="x"></div>
     <!-- 日期 -->
 
-    <van-dropdown-menu>
-      <van-dropdown-item title="选择上课时间" ref="item">
+    <van-dropdown-menu  active-color="#FC6417">
+      <van-dropdown-item title="选择上课时间" ref="item" >
         <van-calendar
   title="日历"
   :poppable="false"
@@ -21,7 +21,7 @@
   :style="{ height: '500px' }"
 />
       </van-dropdown-item>
-      <van-dropdown-item title="选择老师条件" ref="item" >
+      <van-dropdown-item title="选择老师条件" ref="item" style="width: 80vh;">
         <div class="ls-1"> 老师类型</div>
         <div class="lss">
           <div class="ls-2" v-for="(item,index) in ls" :key="index" :class="seleindex==index?'active':''"
@@ -55,16 +55,15 @@
         <input type="button" value="确定" class="qd"  @click="onConfirm">
       </van-dropdown-item>
     </van-dropdown-menu>
-    <div class="x1"></div>
     <!-- 卡片 -->
     <div class="cardBox">
         <div class="card" @click="xq" v-for="(item,index) in list" :key="index">
-            <van-image round class="img" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+            <img src="https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg" alt="">
             <div class="name">
-              {{item}}
+              <p>{{item}}</p>
+              <div class="sex">女&nbsp;&nbsp;&nbsp;&nbsp;15年教龄</div>
             </div>
-            <div class="sex">女&nbsp;&nbsp;&nbsp;&nbsp;15年教龄</div>
-            <div class="y"><input type="button" value="预约" class="yy"></div>
+            <div class="y">预约</div>
           </div>
     </div>
       
@@ -134,12 +133,56 @@
 </script>
 
 <style scoped lang="scss">
-  .cardBox{
-    width: 100%;
-    height: 84vh;
-    overflow: scroll;
-    background: #F0F2F5;
+  .y{
+    background: #ebeefe;
+    color: #eb6100;
+    font-size: .14rem;
+    width: .7rem;
+    height: .31rem;
+    border-radius: .41rem;
+    text-align: center;
+    line-height: .31rem;
   }
+  .cardBox{
+   padding: 0 .1rem; 
+  
+  }
+.card{
+  border-radius: .05rem;
+  margin-top: .1rem;
+    padding: 0 .15rem;
+    height: .81rem;
+    background: #fff;
+    display: flex;
+    align-items: center
+}
+.card img{
+
+  width: .4rem;
+  height: .4rem;
+  border-radius: 50%
+}
+.card .name{
+  height: .46rem;
+  width: 2.03rem;
+  margin-left: .12rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+}
+.card .name p{
+  font-size: .14rem
+}
+.card .name div{
+
+  font-size: .12rem;
+  /* color:#646464; */
+
+}
+.sex{
+  color: #D1D1D1;
+}
+
   .x {
     width: 100%;
     height: 3px;
@@ -160,55 +203,6 @@
     margin-top: 10px;
   }
 
-  .Card {
-    background: #F0F2F5;
-  }
-
-  .card {
-    width: 95%;
-    height: 1rem;
-    margin-left: 0.1rem;
-    margin-top: 0.15rem;
-    background: white;
-  }
-
-  .img {
-    margin-left: 0.35rem;
-    margin-top: 0.15rem;
-    height: 60%;
-    width: 15%
-  }
-
-  .name {
-    margin-left: 1.03rem;
-    margin-top: -0.81rem;
-    color: #7f7f7f;
-    font-size: 0.16rem;
-  }
-
-  .sex {
-    margin-left: 1.03rem;
-    margin-top: 0.07rem;
-    color: #B7B7B7;
-    font-size: 0.15rem;
-  }
-
-  .y {
-    width: 0.65rem;
-    height: 0.3rem;
-    margin-left: 2.7rem;
-    margin-top: -1.11rem;
-  }
-
-  .yy {
-    width: 0.7rem;
-    height: 0.3rem;
-    border-radius: 0.25rem;
-    background: #EBEEFE;
-    color: #EB6100;
-    border: 0.01rem solid #EBEEFE;
-    font-size: 0.14rem;
-  }
 
   .ls-1 {
     margin-left: 0.3rem;

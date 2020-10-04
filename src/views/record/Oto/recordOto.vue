@@ -10,31 +10,26 @@
       </ul>
     </div>
     <!-- 卡片 -->
-    <div class="card">
-      <van-image round class="img" src="https://img.yzcdn.cn/vant/cat.jpeg" />
-      <div class="name">毛昭燕</div>
-      <div class="sex">女&nbsp;&nbsp;&nbsp;&nbsp;15年教龄</div>
-      <div class="y">
-        <input type="button" value="查看详情" class="yy" @click="mine" />
-      </div>
+    <div class="cardBox">
+        <div class="card">
+            <img src="https://baijiayun-wangxiao.oss-cn-beijing.aliyuncs.com/uploads/avatar.jpg" alt="">
+            <div class="name">
+              <p>林德胜</p>
+              <div class="sex">女&nbsp;&nbsp;&nbsp;&nbsp;15年教龄</div>
+            </div>
+            <div class="y" @click="mine">查看详情</div>
+          </div>
     </div>
     <!-- 时间 -->
     <div class="bb">
       <div class="sj">
-        <span>选择时间</span>
+        <span class="sj1">选择时间</span>
         <span class="bj">(北京时间)</span>
       </div>
       <!-- 周表 -->
       <div class="zhou">
         <div class="zhou1">
-          <!-- <van-tabs v-model="active">
-            <van-tab title="周一 09/28"></van-tab>
-            <van-tab title="周一 09/28"></van-tab>
-            <van-tab title="周一 09/28"></van-tab>
-            <van-tab title="周一 09/28"></van-tab>
-            <van-tab title="周一 09/28"></van-tab>
-            <van-tab title="周一 09/28"></van-tab>
-          </van-tabs> -->
+        
           <ul class="z">
             <li>
               周一
@@ -104,6 +99,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.sex{
+  color:#B7B7B7;
+}
 .aa {
   width: 100%;
   height: 0.8rem;
@@ -127,52 +125,49 @@ export default {
   margin-top: 0.1rem;
 }
 
-.card {
-  width: 95%;
-  height: 1rem;
-  position: absolute;
-  top: 0.52rem;
-  left: 0.1rem;
-  background: white;
-  z-index: 222;
+.y{
+    background: white;
+    color: #EB6100;
+    font-size: .13rem;
+    width: .7rem;
+    height: .26rem;
+    border-radius: .41rem;
+    text-align: center;
+    line-height: .26rem;
+    border: 0.01rem solid #EB6100;
+  }
+  .cardBox{
+   padding: 0 .1rem; 
+  }
+.card{
+  border-radius: .05rem;
+    padding: 0 .15rem;
+    position: absolute;
+    top:0.5rem;
+    height: .81rem;
+    background: #fff;
+    display: flex;
+    align-items: center
 }
+.card img{
 
-.img {
-  margin-left: 0.35rem;
-  margin-top: 0.15rem;
-  height: 55%;
-  width: 15%;
+  width: .4rem;
+  height: .4rem;
+  border-radius: 50%
 }
-
-.name {
-  margin-left: 1.05rem;
-  margin-top: -0.8rem;
-  color: #7f7f7f;
-  font-size: 0.15rem;
+.card .name{
+  height: .46rem;
+  width: 2.03rem;
+  margin-left: .12rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
 }
-
-.sex {
-  margin-left: 1.03rem;
-  margin-top: 0.07rem;
-  color: #b7b7b7;
-  font-size: 0.13rem;
+.card .name p{
+  font-size: .14rem
 }
-
-.y {
-  width: 0.65rem;
-  height: 0.3rem;
-  margin-left: 2.7rem;
-  margin-top: -1.17rem;
-}
-
-.yy {
-  width: 0.7rem;
-  height: 0.3rem;
-  border-radius: 0.25rem;
-  background: white;
-  color: #eb6100;
-  border: 0.01rem solid#EB6100;
-  font-size: 0.1rem;
+.card .name div{
+  font-size: .12rem;
 }
 
 .bb {
@@ -183,44 +178,43 @@ export default {
 
 .sj {
   position: absolute;
-  top: 1.7rem;
+  top: 0.7rem;
   left: 0.2rem;
-  color: #858586;
-  font-size: 0.2rem;
-}
+  // color: #707070;
 
+}
+.sj1{
+  font-size: 0.16rem;
+}
 .bj {
-  font-size: 0.15rem;
-  color: #979899;
+  font-size: 0.14rem;
+  color:#595959;
   margin-left: 0.05rem;
 }
 
 .zhou1 {
-  width: 95%;
+  width: 95vw;
   height: 0.7rem;
   position: absolute;
-  top: 2.1rem;
+  top: 1.8rem;
   left: 0.1rem;
   background: white;
-  // overflow: hidden;
+    overflow: scroll;
 
 }
 .zhou1 ul{
-  width: 95%;
-  overflow: scroll;
-}
-// .zhou1{
+  width: 160vw;
+  height: 100%;
 
-// }
+}
 
 .z {
   display: flex;
-  /* justify-content: space-around; */
 }
 
 .z li {
   margin-top: 13px;
-  font-size: 0.15rem;
+  font-size: 0.14rem;
   height: 0.5rem;
   width: 10%;
   color: #a4a4a4;

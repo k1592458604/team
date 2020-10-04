@@ -50,7 +50,8 @@
     height: 0.6rem;
     text-align: center;
     line-height: 0.6rem;
-    font-size:0.2rem;
+    font-size:0.18rem;
+    color:#666666
   }
 
   .x {
