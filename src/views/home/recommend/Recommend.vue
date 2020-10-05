@@ -67,15 +67,19 @@
 </script>
 
 <style lang='scss' scoped>
+*{
+    padding: 0;
+    margin: 0;
+}
 .curriculum-n{
     box-sizing: border-box;
     width: 95%;
-    padding: 0.15rem;
+    padding: 0.14rem;
     margin: 0.15rem auto;
     background: white;
     border-radius: 0.1rem;
     .curriculum-text{
-        font-size: 0.17rem;
+        font-size: 0.16rem;
     }
     .curriculum-con{
         font-size: 0.13rem;
@@ -84,9 +88,9 @@
         display: flex;
         align-items: center;
         height: 0.3rem;
-        margin: 0.2rem 0;
+        margin: 0.14rem 0;
         img{
-            width: 0.3rem;
+            width: 0.27rem;
             border-radius: 50%;
         }
         span{
@@ -98,7 +102,7 @@
     .curriculum-bottom{
         height: 0.3rem;
         line-height: 0.3rem;
-        font-size: 0.15rem;
+        font-size: 0.13rem;
         color: gray;
         border-top: 0.01rem solid rgb(243, 242, 242);
     }

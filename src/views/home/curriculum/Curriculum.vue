@@ -9,7 +9,7 @@
           </div>
           <p class="curriculum-bottom">
               {{item.text1}}
-              <span style="float: right;color: #44a426;">{{item.cz}}</span>
+              <span style="float: right;color: #44a426;font-size:16px">{{item.cz}}</span>
           </p>
       </div>
       <div class="curriculum-n" v-for="item in list1" :key="item.text" @click="goto">
@@ -21,7 +21,7 @@
           </div>
           <p class="curriculum-bottom">
               {{item.text1}}
-              <span style="float: right;color: orange;">{{item.cz}}</span>
+              <span style="float: right;color: orange;font-size:16px">{{item.cz}}</span>
           </p>
       </div>
       
@@ -106,16 +106,19 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-
+*{
+    padding: 0;
+    margin: 0;
+}
 .curriculum-n{
     box-sizing: border-box;
     width: 95%;
-    padding: 0.15rem;
+    padding: 0.14rem;
     margin: 0.15rem auto;
     background: white;
     border-radius: 0.1rem;
     .curriculum-text{
-        font-size: 0.17rem;
+        font-size: 0.16rem;
     }
     .curriculum-con{
         font-size: 0.13rem;
@@ -124,9 +127,9 @@ export default {
         display: flex;
         align-items: center;
         height: 0.3rem;
-        margin: 0.2rem 0;
+        margin: 0.14rem 0;
         img{
-            width: 0.3rem;
+            width: 0.27rem;
             border-radius: 50%;
         }
         span{
@@ -138,7 +141,7 @@ export default {
     .curriculum-bottom{
         height: 0.3rem;
         line-height: 0.3rem;
-        font-size: 0.15rem;
+        font-size: 0.13rem;
         color: gray;
         border-top: 0.01rem solid rgb(243, 242, 242);
     }
