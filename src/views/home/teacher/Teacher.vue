@@ -46,6 +46,10 @@ export default {
 </script>
 
 <style lang='scss' scopde>
+*{
+    padding: 0;
+    margin: 0;
+}
 .teacher{
     width: 95%;
     display: flex;
@@ -58,20 +62,20 @@ export default {
         display: flex;
         img{
             border-radius: 50%;
-            width: 60%;
-            height: 60%;
+            width: 0.4rem;
+            height: 0.4rem;
             margin-left: 20%;
             margin-top: 20%;
         }
 
     }
     .teacher-name{
-        font-size: 0.18rem;
+        font-size: 0.15rem;
         margin-top: 0.11rem;
         font-weight: 100;
     }
     .teacher-introduce{
-        font-size: 0.119rem;
+        font-size: 0.12rem;
         margin-top: 0.05rem;
         color: rgb(189, 186, 186);
     }

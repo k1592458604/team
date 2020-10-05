@@ -72,10 +72,14 @@
 </script>
 
 <style lang='scss' scoped>
+*{
+    margin: 0;
+    padding: 0;
+}
 .teacher{
     width: 95%;
     display: flex;
-    height: 0.7rem;
+    height: 0.81rem;
     margin: 0.1rem auto;
     background: white;
     .teacher-img{
@@ -83,19 +87,19 @@
         display: flex;
         img{
             border-radius: 50%;
-            width: 55%;
-            height: 55%;
+            width: 58%;
+            height: 50%;
             margin-left: 20%;
-            margin-top: 20%;
+            margin-top: 27%;
         }
 
     }
     .teacher-name{
-        font-size: 0.17rem;
-        margin-top: 0.11rem;
+        font-size: 0.15rem;
+        margin-top: 0.17rem;
         font-weight: 200;
         span{
-            font-size: 0.14rem;
+            font-size: 0.11rem;
             color: #ea7a2f;
             margin-left: 0.1rem;
             font-weight: 200;
