@@ -8,6 +8,7 @@
         shape="round"
         v-model="value"
         placeholder="请输入搜索关键词"
+        @focus="go"
       />
     </div>
     <div class="exercise-footer-box">
@@ -76,6 +77,11 @@ export default {
     nav(){
       this.$router.push({
         path:'/exercise7'
+      })
+    },
+    go(){
+       this.$router.push({
+        path:'/courseSearch'
       })
     }
   },

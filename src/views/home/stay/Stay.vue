@@ -27,6 +27,8 @@
 <style lang='scss' scoped>
     * {
         box-sizing: border-box;
+        padding: 0;
+        margin: 0;
     }
 
     .box {
@@ -38,11 +40,11 @@
             padding: 0.15rem;
         }
         .title{
-            font-size: 0.15rem;
+            font-size: 0.12rem;
             padding: 0.1rem 0.15rem;
         }
         input{
-            font-size: 0.17rem;
+            font-size: 0.13rem;
             width: 100%;
             border: none;
             height: 0.4rem;
@@ -50,7 +52,7 @@
             display:block;
         }
         .test{
-            height: 1rem;
+            height: 0.9rem;
             width: 100%;
             border: none;
             font-size: 0.15rem;
