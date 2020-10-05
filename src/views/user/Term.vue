@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style scoped>
-.box {
+.box1 {
   width: 100%;
   height: 0.5rem;
   background: white;

@@ -8,7 +8,7 @@
     />
     <van-empty
       class="custom-image"
-      image="https://img.yzcdn.cn/vant/custom-empty-image.png"
+      image="https://wap.365msmk.com/img/empty.0d284c2e.png"
       description="暂无收藏"
     />
   </div>
