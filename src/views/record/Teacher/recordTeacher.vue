@@ -70,6 +70,7 @@
             <p>免费</p>
           </div>
         </div>
+        
       </div>
     </div>
        
@@ -127,6 +128,8 @@
 </script>
 
 <style scoped lang="scss">
+
+
 .list{
   width: 100%;
   height: 77vh;
@@ -154,7 +157,7 @@
         line-height: .3rem;
       }
       .teacher{
-        height: .65rem;
+        height: .5rem;
         display: flex;
         align-items: center;
         img{
@@ -170,7 +173,7 @@
         }
       }
       .sales{
-        height: .44rem;
+    
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -238,7 +241,7 @@
     display: flex;
     align-items: center;
       position: absolute;
-    top:0.5rem;
+    top:0.4rem;
 }
 .card img{
 
