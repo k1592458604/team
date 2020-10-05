@@ -52,7 +52,7 @@
         close-on-click-action
       />
 
-      <van-popup v-model="show1" position="bottom" :style="{ height: '30%' }">
+      <van-popup v-model="show1" position="bottom" :style="{ height: '50%' }">
         <van-datetime-picker
           v-model="currentDate"
           type="date"
@@ -223,5 +223,11 @@ li span > img {
   position: absolute;
   right: 0.3rem;
   top: 0.1rem;
+}
+.van-action-sheet__item{
+  line-height: .5rem;
+}
+.van-action-sheet__cancel{
+  height: .5rem;
 }
 </style>

@@ -214,6 +214,50 @@ const routes = [
       {
         path: 'userstudy',
         component: () => import('../views/user/Study.vue'),
+      },
+      {
+        path:'usersetup',
+        component:()=>import('../views/user/SetUp.vue')
+      },
+      {
+        path:'usernewpass',
+        component:()=>import('../views/user/NewPass.vue')
+      },
+      {
+        path:'userlogin',
+        component:()=>import('../views/user/Login.vue')
+      },
+      {
+        path:'userorder',
+        component:()=>import('../views/user/Order.vue')
+      },
+      {
+        path:'uservip_order',
+        component:()=>import('../views/user/vip_Order.vue')
+      },
+      {
+        path:'userappointment',
+        component:()=>import('../views/user/Appointment.vue')
+      },
+      {
+        path:'usercoupon',
+        component:()=>import('../views/user/Coupon.vue')
+      },
+      {
+        path:'userstudycards',
+        component:()=>import('../views/user/StudyCards.vue')
+      },
+      {
+        path:'usermembership',
+        component:()=>import('../views/user/Membership.vue')
+      },
+      {
+        path:'usernotify',
+        component:()=>import('../views/user/Notify.vue')
+      },
+      {
+        path:'userfeedback',
+        component:()=>import('../views/user/Feedback.vue')
       }
     ]
   },
