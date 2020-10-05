@@ -4,6 +4,7 @@
         <van-calendar title=" " :poppable="false" :show-confirm="false" :style="{ height: '440px' }" @select="Time" />
         <div class="ri">
             <span class="ri-1">{{this.date}}</span>
+            <!-- <input type="date" name="" id=""> -->
             <span class="ri-2">当天0节课</span>
         </div>
     </div>
