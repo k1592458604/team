@@ -3,7 +3,7 @@
        <div>
       <van-nav-bar title="仿真模考" @click-left="onClickLeft" left-arrow>
         <template #right>
-          <van-icon name="search" size="18" />
+          <van-icon name="search" size="18" @click="go"/>
         </template>
       </van-nav-bar>
     </div>
@@ -56,6 +56,11 @@ export default {
        onClickLeft() {
       window.history.back();
     },
+     go(){
+       this.$router.push({
+        path:'/courseSearch'
+      })
+    }
   }
 
 }

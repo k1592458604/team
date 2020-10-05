@@ -5,9 +5,7 @@
       @click-left="onClickLeft"
       left-arrow
     >
-      <template #right>
-        <van-icon name="search" size="18" />
-      </template>
+    
     </van-nav-bar>
     <div class="tiku">
       <van-row>
