@@ -179,12 +179,15 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
       show: false,
     };
   },
+
+
   methods: {
     order(){
       this.$router.push({
@@ -279,6 +282,11 @@ export default {
 </script>
 
 <style scoped>
+*{
+  margin: 0;
+  padding: 0;
+  
+}
 .cont {
   width: 100%;
   height: 100vh;

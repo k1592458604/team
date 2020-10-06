@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="ls-1">学科</div>
-        <div class="lss">
+        <div class="lss" style="heigth:100vh">
           <div class="ls-2" v-for="(item,index) in xk" :key="index" :class="seleindex3==index?'active':''"
           @click="onclick3(index)">
             {{item}}
@@ -133,6 +133,9 @@
 </script>
 
 <style scoped lang="scss">
+.van-dropdown-item--down,.van-dropdown-item{
+  height: 100vh !important;
+}
   .y{
     background: #ebeefe;
     color: #eb6100;

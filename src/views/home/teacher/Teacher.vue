@@ -1,40 +1,29 @@
 <template>
   <div>
-      <div class="teacher" v-for="(item,index) in list" :key="index" @click="goto">
+      <div class="teacher" v-for="(item,index) in list[4].list" :key="index" @click="goto">
           <div class="teacher-img">
-              <img :src="item.img" alt="">
+              <img :src="item.teacher_avatar" alt="">
           </div>
           <div>
-              <p class="teacher-name">{{item.name}}</p>
-              <p class="teacher-introduce">{{item.introduce}}</p>
+              <p class="teacher-name">{{item.teacher_name}}</p>
+              <p class="teacher-introduce">{{item.introduction}}</p>
           </div>
       </div>
   </div>
 </template>
 
 <script>
+import {getAppIndex} from '../../../network/api/api'
 export default {
     data() {
         return {
-            list:[
-                {
-                    img:'/img/home/老师/1.png',
-                    name:'杨德胜',
-                    introduce:'杨老师，特级教师，多次被中国书学会评为全国高...'
-                },
-                {
-                    img:'/img/home/老师/1.png',
-                    name:'文卫星',
-                    introduce:'文卫星，江苏沐阳县人，上海市特级教师。上海市...'
-                },
-                {
-                    img:'/img/home/老师/1.png',
-                    name:'马学斌',
-                    introduce:'马学斌老师，从2004年起，专注中考数学压轴题1...'
-                }
-            ]
+            list:[]
         }
     },
+     async mounted() {
+      var list=await getAppIndex()
+      this.list=list.data.data
+  },
     methods: {
         goto(){
             this.$router.push({

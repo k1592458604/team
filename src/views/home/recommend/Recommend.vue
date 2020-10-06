@@ -1,110 +1,114 @@
 <template>
-    <div>
-        <div class="curriculum-n" v-for="(item,index) in list" :key="index">
-            <p class="curriculum-text">{{item.text}}</p>
-            <p class="curriculum-con">{{item.con}}</p>
-            <div class="curriculum-t">
-                <img :src="item.img" alt="">
-                <span>{{item.name}}</span>
-            </div>
-            <p class="curriculum-bottom">
-                {{item.text1}}
-                <span style="float: right;color: #44a426;">{{item.cz}}</span>
-            </p>
+  <div class="curriculum">
+        <div
+      class="curriculum-n"
+      v-for="(item, index) in list[1].list"
+      :key="index"
+      @click="goto"
+    >
+      <div class="curriculumBox">
+        <img :src="item.cover_img" alt="" />
+        <div class="curriculumMsg">
+          <h5>{{item.title}}</h5>
+          <p>
+              {{item.sales_num}}人已报名
+            <span></span>
+          </p>
         </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                list: [{
-                    text: '每时每刻初中数学——初一拓展-分式（一）',
-                    con: '共1课时',
-                    img: '/img/home/老师/1.png',
-                    name: '廖天金',
-                    text1: '36人已报名',
-                    img1: '',
-                    cz: '免费'
-                }, {
-                    text: '每时每课-初二物理-摩擦力',
-                    con: '共1课时',
-                    img: '/img/home/老师/1.png',
-                    name: '白静',
-                    text1: '43人已报名',
-                    img1: '',
-                    cz: '免费'
-                }, {
-                    text: '每时每课-初二物理-牛顿第一定律&二力平衡知识点',
-                    con: '共1课时',
-                    img: '/img/home/老师/1.png',
-                    name: '白静',
-                    text1: '39人已报名',
-                    img1: '',
-                    cz: '免费'
-                }, {
-                    text: '每时每课-初一英语-where引导的特殊疑问句和on,in,under介词用法知识点',
-                    con: '共1课时',
-                    img: '/img/home/老师/1.png',
-                    name: '璐璐',
-                    text1: '37人已报名',
-                    img1: '',
-                    cz: '免费'
-                }, {
-                    text: '每时每课-初二英语-频率副词知识点',
-                    con: '共1课时',
-                    img: '/img/home/老师/1.png',
-                    name: 'Willa',
-                    text1: '28人已报名',
-                    img1: '',
-                    cz: '免费'
-                }
-                ]
-            }
-        },
-    }
+import { getAppIndex } from "../../../network/api/api";
+export default {
+      data() {
+    return {
+      list: [],
+    };
+  },
+  async mounted() {
+    var appIndex = await getAppIndex();
+    this.list = appIndex.data.data;
+    console.log(this.list);
+  },
+   methods: {
+    goto() {
+      this.$router.push({
+        path: "/courseList",
+      });
+    },
+  },
+
+};
 </script>
 
 <style lang='scss' scoped>
-*{
-    padding: 0;
-    margin: 0;
+** {
+  padding: 0;
+  margin: 0;
 }
-.curriculum-n{
-    box-sizing: border-box;
-    width: 95%;
-    padding: 0.14rem;
-    margin: 0.15rem auto;
-    background: white;
-    border-radius: 0.1rem;
-    .curriculum-text{
-        font-size: 0.16rem;
+.curriculumBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center ;
+  img {
+    width: 30vw;
+    height: 12vh;
+    border-radius: .2rem;
+    margin-right: .2rem;
+  }
+  .curriculumMsg{
+      height: .9rem;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h5{
+          font-size: .14rem;
+      }
+      p{
+          font-size: .12rem;
+          color: rgba(0,0,0,.45);
+      }
+  }
+}
+.curriculum-n {
+  box-sizing: border-box;
+  width: 95%;
+  padding: 0.14rem;
+  margin: 0.15rem auto;
+  background: white;
+  border-radius: 0.1rem;
+  .curriculum-text {
+    font-size: 0.16rem;
+  }
+  .curriculum-con {
+    font-size: 0.13rem;
+  }
+  .curriculum-t {
+    display: flex;
+    align-items: center;
+    height: 0.3rem;
+    margin: 0.14rem 0;
+    img {
+      width: 0.27rem;
+      border-radius: 50%;
     }
-    .curriculum-con{
-        font-size: 0.13rem;
+    span {
+      font-size: 0.13rem;
+      color: gray;
+      margin-left: 0.1rem;
     }
-    .curriculum-t{
-        display: flex;
-        align-items: center;
-        height: 0.3rem;
-        margin: 0.14rem 0;
-        img{
-            width: 0.27rem;
-            border-radius: 50%;
-        }
-        span{
-            font-size: 0.13rem;
-            color: gray;
-            margin-left: 0.1rem;
-        }
-    }
-    .curriculum-bottom{
-        height: 0.3rem;
-        line-height: 0.3rem;
-        font-size: 0.13rem;
-        color: gray;
-        border-top: 0.01rem solid rgb(243, 242, 242);
-    }
+  }
+  .curriculum-bottom {
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.13rem;
+    color: gray;
+    border-top: 0.01rem solid rgb(243, 242, 242);
+  }
 }
 </style>
